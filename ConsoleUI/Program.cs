@@ -11,7 +11,6 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //CustomerDemo();
-           
             //EmployeeDemo();
 
             IProductService productService = NinjectInstanceFactory.GetInstance<IProductService>();
@@ -21,7 +20,6 @@ namespace ConsoleUI
             {
                 Console.WriteLine(product.Name);
             }
-            
             Console.ReadLine();
         }
 
