@@ -6,7 +6,7 @@ using Entity.Concrete;
 
 namespace Business.Concrete
 {
-    public class CustomerManager
+    public class CustomerManager : ICustomerService
     {
         private ICustomerDal _customerDal;
         private IPersonService _personService;
@@ -176,6 +176,11 @@ namespace Business.Concrete
             {
                 throw new Exception("Validation error");
             }
+        }
+
+        public bool CustomerExists(Customer customer)
+        {
+            throw new NotImplementedException();
         }
     }
 }

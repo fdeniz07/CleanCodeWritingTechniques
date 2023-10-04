@@ -1,6 +1,8 @@
-﻿namespace Entity.Concrete
+﻿using Entity.Abstract;
+
+namespace Entity.Concrete
 {
-    public class Person
+    public class Person : IEntity
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
